@@ -121,21 +121,21 @@
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="border rounded p-3 mb-3 position-relative">
-                        <h3 class="text-danger fw-bold">$300</h3>
-                        <h3 class="text-danger fw-bold">Business Fair</h3>
+                    <div class="border rounded p-3 mb-3 position-relative bg-info shadow">
+                        <h3 class="text-white fw-bold">$300</h3>
+                        <h3 class="text-white fw-bold">Business Fair</h3>
                         <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-success">
                             Hot
                           </span>
-                        <p class="text-secondary mt-3">For most businesses event 
+                        <p class="text-white mt-3">For most businesses event 
                             like book fair, craft fair.
                         </p>
                         <div>
-                            <p><i class="fas fa-check-circle"></i><span class="ms-2 text-secondary">limited space access</span></p>
-                            <p><i class="fas fa-check-circle"></i><span class="ms-2 text-secondary">Security Facility</span></p>
-                            <p><i class="fas fa-check-circle"></i><span class="ms-2 text-secondary">Event Support</span></p>
-                            <p><i class="fas fa-check-circle"></i><span class="ms-2 text-secondary">Decoration Design</span></p>
-                            <p><i class="fas fa-check-circle"></i><span class="ms-2 text-secondary">Per Day Bill</span></p>
+                            <p><i class="fas fa-check-circle"></i><span class="ms-2 text-white">limited space access</span></p>
+                            <p><i class="fas fa-check-circle"></i><span class="ms-2 text-white">Security Facility</span></p>
+                            <p><i class="fas fa-check-circle"></i><span class="ms-2 text-white">Event Support</span></p>
+                            <p><i class="fas fa-check-circle"></i><span class="ms-2 text-white">Decoration Design</span></p>
+                            <p><i class="fas fa-check-circle"></i><span class="ms-2 text-white">Per Day Bill</span></p>
                         </div>
                         <div class="text-center mt-3">
                             <button type="button" class="btn btn-danger rounded-pill">Choose Plan</button>
@@ -163,9 +163,15 @@
                 </div>
             </div>
         </section>
-        <!-- modal -->
-       
-        <!-- modal -->
+        <!-- toast -->
+        
+        <div class="toast bg-primary text-white fade show float-end my-1">
+                <button type="button" class="btn-close btn-close-white float-end" data-bs-dismiss="toast"></button>
+            <div class="toast-body">
+                <i class="fas fa-gift"></i><span class="ms-2">20% off on your next booking. Hurry Now!</span>
+            </div>
+        </div>
+        <!-- toast -->
         <!-- faq section starts here  -->
         <section class="container mb-5">
             <div class="text-center my-5">
@@ -241,6 +247,21 @@
 
         <!-- font awesome -->
         <script src="https://kit.fontawesome.com/1ed2fe7716.js" crossorigin="anonymous"></script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function(){
+                var btn = document.getElementById("myBtn");
+                var element = document.getElementById("myToast");
+            
+                // Create toast instance
+                var myToast = new bootstrap.Toast(element);
+            
+                btn.addEventListener("click", function(){
+                    myToast.show();
+                });
+            });
+        </script>
+        
     
 </body>
 </html>
