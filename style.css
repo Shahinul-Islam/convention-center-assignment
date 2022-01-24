@@ -22,6 +22,10 @@ body{
     display: block;
     margin: 0 auto;
 }
+
+footer{
+    background-color: black;
+}
 @media only screen and (min-width: 764px) {
     .card-3{
         transform: scale(1.1);
