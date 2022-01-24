@@ -6,7 +6,22 @@ body{
     height: 585px;
 }
 
-
+.plan{
+    background-image: url(images/plan-bkg.png);
+}
+.exhibit{
+    background-image: url(images/exhibit-bkg.png);
+}
+.attend{
+    background-image: url(images/attend-bkg.png);
+}
+.h-line::after{
+    content: '';
+    border-bottom: 3px solid #ffffff;
+    width: 70px;
+    display: block;
+    margin: 0 auto;
+}
 @media only screen and (min-width: 764px) {
     .card-3{
         transform: scale(1.1);
