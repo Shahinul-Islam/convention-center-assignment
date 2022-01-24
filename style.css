@@ -5,3 +5,10 @@ body{
 .carousel-height{
     height: 585px;
 }
+
+
+@media only screen and (min-width: 764px) {
+    .card-3{
+        transform: scale(1.1);
+    }
+  }
